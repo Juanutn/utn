@@ -49,18 +49,27 @@ cout << "Opcion: "<<endl;
 cin >>opcion;
 system("cls");
 switch (opcion){
+
 case 1:
     cargar (a);
     system ("cls");
     system ("pause");
+    break;
 case 2:
     mostrar (a);
     system ("cls");
     system ("pause");
+    break;
 case 0:
     return 0;
+    break;
+default: 
+    if(opcion!=0){
+    cout<< "OPCION INCORRECTA,INTENTE DE NUEVO"<< endl;
+    system("pause");
+    system("cls");
 }
-    
+ break;   
 }
 
 }
